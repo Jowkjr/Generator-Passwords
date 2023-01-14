@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Passwords Generator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="mid">
+        <h1>Passwords Generator</h1>
+        <div class="pick">
+          <h2>Password length:</h2>
+          <span id="number">8</span>
+          <input class="range" type="range" id="length" min="1" max="16" />
+          <span>Characters used:</span>
+          <div class="radio">
+            <div class="checkbox">
+              <label for="scales">
+                <span class="election">ABC</span>
+                <input
+                  type="checkbox"
+                  id="lettersUp"
+                  name="interest"
+                  value="coding"
+                  checked
+                />
+              </label>
+
+              <label>
+                <span class="election">abc</span>
+                <input
+                  type="checkbox"
+                  id="lettersDown"
+                  name="interest"
+                  value="coding"
+                  checked
+                />
+              </label>
+
+              <label
+                ><span class="election"> 123</span>
+                <input
+                  type="checkbox"
+                  id="numbers"
+                  name="interest"
+                  value="coding"
+                  checked
+                />
+              </label>
+
+              <label
+                ><span class="election">@#$</span>
+                <input
+                  type="checkbox"
+                  id="signs"
+                  name="interest"
+                  value="coding"
+                  checked
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="password-container">
+          <div class="password-container-span">
+            <span class="password" id="password"> </span>
+          </div>
+          <div class="password-container--icons">
+            <i class="fa-solid fa-arrows-rotate" id="refresh"></i>
+            <i class="fa-regular fa-copy" id="copy">
+              <span class="fa-copy--tooltip" id="tooltipCopy">Copyed</span>
+            </i>
+          </div>
+        </div>
+        <div class="container-power">
+          <span class="power" id="power">Strong</span>
+        </div>
+      </main>
+    </div>
+    <script src="code.js"></script>
+  </body>
+</html>
